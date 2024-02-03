@@ -1,0 +1,62 @@
+.phone-slide {
+  width: 100%;
+  box-sizing: content-box;
+  height: auto;
+  background-color: white;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10vw;
+
+  padding: 70px 0;
+
+  .slick-slide img {
+    padding: 0 20px;
+    height: 100%;
+    width: 400px;
+  }
+
+  .custom-dots {
+    box-sizing: content-box;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .custom-dots li {
+    display: inline-block;
+  }
+
+  .custom-dots li button {
+    width: 20px; /* Adjust dot size */
+    height: 20px; /* Adjust dot size */
+
+    border-radius: 50%; /* Rounded dots */
+    border: 1.5px solid black; /* Default dot color */
+  }
+
+  .custom-dots li.slick-active button {
+    background-color: rgb(79, 127, 195);
+  }
+
+  > .img-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    // >.hstack{
+    //   display: flex;
+    //   flex-direction: row;
+    // }
+
+    > div {
+      width: 94vw;
+      height: auto;
+    }
+  }
+}
